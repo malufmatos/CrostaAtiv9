@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador e Decodificador Vigenere</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <section class="container">
+        <h2>Codificador e Decodificador Vigenere</h2>
+        <form id="form-vigenere">
+          <div>
+            <label for="input-texto">Texto:</label>
+            <textarea id="input-texto" placeholder="Digite o texto aqui..."></textarea>
+          </div>
+          <div>
+            <label for="chave">Chave:</label>
+            <input type="texto" id="chave" placeholder="Digite a chave aqui..."/>
+          </div>
+          <div>
+            <label for="operacao">Operação:</label>
+            <select id="operacao">
+              <option value="codificar">Codificar</option>
+              <option value="decodificar">Decodificar</option>
+            </select>
+          </div>
+          <section id="buttons">
+            <button type="button" onclick="cifraVigenere()" id="executar" >Executar</button>
+            <button type="button" onclick="limparCampos()" id="limpar" >Limpar</button>
+          </section>
+        </form>
+        <div>
+          <h3>Resultado:</h3>
+          <p id="resultado"></p>
+        </div>
+    </section>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
+
